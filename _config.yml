@@ -6,7 +6,7 @@ description: "Anaquash is a photographic exploration of the Anacostia River in W
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary-dark: '#FDB716'
+  primary-dark: '#262626'
   links: '#219ab3'
 
 # Footer settings
