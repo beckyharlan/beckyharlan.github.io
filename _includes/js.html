@@ -13,34 +13,21 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/grayscale.js" | prepend: site.baseurl }}"></script>
     
-     <!-- Custom LightSlider Scripts -->
-    <link type="text/css" rel="stylesheet" href="{{ "/css/lightslider.css" | prepend: site.baseurl }}" />                  
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="{{ "/js/lightslider.js" | prepend: site.baseurl }}"></script>
+     <!-- Custom Swiper Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/js/swiper.jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/js/swiper.jquery.min.js"></script>
     
-    <script type="text/javascript">
-      $(document).ready(function() {
-          $('#lightSlider').lightSlider({
-              adaptiveHeight:true,
-              item:1,
-              slideMargin:0,
-              loop:true,
-              easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-              speed:600,
-              responsive : [
-                  {
-                      breakpoint:800,
-                      settings: {
-                          
-                        }
-                  },
-                  {
-                      breakpoint:480,
-                      settings: {
-                          
-                        }
-                  }
-              ]
-          });
-      });
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
     </script>
