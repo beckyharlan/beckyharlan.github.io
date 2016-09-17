@@ -24,7 +24,23 @@
               adaptiveHeight:true,
               item:1,
               slideMargin:0,
-              loop:true
+              loop:true,
+              easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+              speed:600,
+              responsive : [
+                  {
+                      breakpoint:800,
+                      settings: {
+                          
+                        }
+                  },
+                  {
+                      breakpoint:480,
+                      settings: {
+                          
+                        }
+                  }
+              ]
           });
       });
     </script>
