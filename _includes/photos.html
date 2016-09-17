@@ -4,8 +4,27 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Photos</h2>
-                    <p>Placeholder</p>
+                        <ul id="lightSlider">
+                          <li>
+                              <h3>First Slide</h3>
+                              <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+                          </li>
+                          <li>
+                              <h3>Second Slide</h3>
+                              <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                          </li>
+                        </ul>
                 </div>
             </div>
         </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#adaptive').lightSlider({
+                    adaptiveHeight:true,
+                    item:1,
+                    slideMargin:0,
+                    loop:true
+                });
+            });
+        </script>
     </section>
