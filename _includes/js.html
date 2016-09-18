@@ -19,6 +19,8 @@
 
     <!-- Initialize Swiper -->
     <script>
+    
+    var temp = "<div class='swiper-slide' style='background-image:url("{{ "/img/{image}" }}"")'></div>";
     var img = [
         "Harlan_TMN_01.jpg",
         "Harlan_TMN_02.jpg",
@@ -36,9 +38,9 @@
     ];
 
     for (var i = 0; i < img.length; ++i) {
+        alert(temp);
         //html = temp.replace("{image}", img[i]);
-        html = "<div class=\"swiper-slide\">slide</div>";
-        $("#photo-gallery").append(html);
+        //$("#photo-gallery").append(html);
     }
     
     var swiper = new Swiper('.swiper-container', {
