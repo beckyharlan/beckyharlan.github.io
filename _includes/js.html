@@ -33,11 +33,25 @@
     <!-- Custom Scripts -->
     <script>
 
+    var temp = "<a href='https://beckyharlan.github.io/img/community/c{image}.jpg'><img src='https://beckyharlan.github.io/img/community/c{image}_tn.jpg' /></a>";
+    limitItem = 12;
+    for (var i = 0; i < limitItem; ++i) {
+        html = temp.replace("{image}", i + 1).replace("{image}", i + 1);
+        $("#communitygallery").append(html);
+    }
+
     var temp = "<a href='https://beckyharlan.github.io/img/photos/p{image}.jpg'><img src='https://beckyharlan.github.io/img/photos/p{image}_tn.jpg' /></a>";
     limitItem = 48;
     for (var i = 0; i < limitItem; ++i) {
         html = temp.replace("{image}", i + 1).replace("{image}", i + 1);
         $("#photogallery").append(html);
+    }
+
+    var temp = "<a href='https://beckyharlan.github.io/img/postcards/{image}.jpg'><img src='https://beckyharlan.github.io/img/postcards/{image}_tn.jpg' /></a>";
+    limitItem = 4;
+    for (var i = 0; i < limitItem; ++i) {
+        html = temp.replace("{image}", i + 1).replace("{image}", i + 1);
+        $("#postcardgallery").append(html);
     }
 
     $(document).ready(function() {
