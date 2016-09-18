@@ -32,6 +32,15 @@
 
     <!-- Custom Scripts -->
     <script>
+
+    var temp = "<a href=\"{{ \"img/photos/p{image}.jpg\" | prepend: site.baseurl }}\"><img src=\"{{ \"img/photos/p{image}_tn.jpg\" | prepend: site.baseurl }}\" /></a>";
+    var w = 1, html = '', limitItem = 47;
+    
+    for (var i = 0; i < limitItem; ++i) {
+        html += temp.replace("{image}", i + 1);
+    }
+    $("#photogallery").html(html);
+
     $(document).ready(function() {
         $("#communitygallery").lightGallery({
                 thumbnail:true,
