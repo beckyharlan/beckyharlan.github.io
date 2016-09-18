@@ -374,7 +374,7 @@ body {
     padding: 5px 5px 5px 5px;
 }
 
-@media(min-width:480px) {
+@media(max-width:480px) {
     #communitygallery img, #photogallery img, #postcardgallery img {
         width: 300px;
     }
