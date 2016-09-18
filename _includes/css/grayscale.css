@@ -379,7 +379,7 @@ body {
 
 .swiper-slide {
         background-position: center;
-        background-size: contain;
+        background-size: auto 400px;
         text-align: center;
         font-size: 18px;
         background: #fff;
