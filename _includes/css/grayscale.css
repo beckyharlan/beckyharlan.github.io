@@ -375,12 +375,19 @@ body {
 }
 
 @media(max-width:480px) {
+    
+    #photos, #video, #map2, #community, #postcards {
+    padding-top: 60px;
+    }
+
     #communitygallery img, #photogallery img, #postcardgallery img {
         width: 300px;
     }
+
     #communitygallery img {
         height: 225px;
     }
+
 }
 
 .swiper-container {
