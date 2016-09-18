@@ -18,4 +18,37 @@
      <script src="{{ "/js/swiper.jquery.min.js" | prepend: site.baseurl }}"></script>
 
     <!-- Initialize Swiper -->
+    <script>
+    //var temp = "<div class=\"swiper-slide\"  style=\"{{ \"background-image:url('/img/{image}')\" | prepend: site.baseurl }}\"</div>";
+    var img = [
+        "Harlan_TMN_01.jpg",
+        "Harlan_TMN_02.jpg",
+        "Harlan_TMN_03.jpg",
+        "Harlan_TMN_04.jpg",
+        "Harlan_TMN_05.jpg",
+        "Harlan_TMN_06.jpg",
+        "Harlan_TMN_12.jpg",
+        "Harlan_TMN_13.jpg",
+        "Harlan_TMN_14.jpg",
+        "Harlan_TMN_15.jpg",
+        "Harlan_TMN_16.jpg",
+        "Harlan_TMN_17.jpg",
+        "Harlan_TMN_18.jpg"
+    ];
+
+    for (var i = 0; i < img.length; ++i) {
+        //html = temp.replace("{image}", img[i]);
+        html = "<div class='swiper-slide'>slide</div>";
+        $("#photo-gallery").append(html);
+    }
     
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
+    </script>
