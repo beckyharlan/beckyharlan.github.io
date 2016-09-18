@@ -30,26 +30,9 @@
      <!-- Custom Freewall Scripts -->
      <script src="{{ "/js/freewall.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Initialize Swiper -->
+    <!-- Custom Scripts -->
     <script>
-
-    var temp = "<div class=\"swiper-slide\"  style=\"background-image:url(\"/img/{image}\")\"></div>";
-    var img = [
-
-    ];
-
-    for (var i = 0; i <= img.length; ++i) {
-        html = temp.replace("{image}", img[i]);
-        $("#photo-gallery").append(html);
-    }
-
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        //slidesPerView: 1,
-        paginationClickable: true,
-        spaceBetween: 30,
-        loop: true
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery(); 
     });
     </script>
