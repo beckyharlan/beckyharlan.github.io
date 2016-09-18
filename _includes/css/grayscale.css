@@ -377,6 +377,8 @@ body {
 @media(max-width:480px) {
     #communitygallery img, #photogallery img, #postcardgallery img {
         width: 300px;
+    }
+    #communitygallery img {
         height: 225px;
     }
 }
