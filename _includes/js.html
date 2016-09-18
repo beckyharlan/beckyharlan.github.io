@@ -19,7 +19,7 @@
 
     <!-- Initialize Swiper -->
     <script>
-    var temp = "<div class='swiper-slide' style=''><img src=\"{{ \"/img/Harlan_TMN_01.jpg\" }}\"></div>
+    var temp = "<div class='swiper-slide' style=''><img src=\"{{ \"/img/Harlan_TMN_01.jpg\" }}\"></div>;
     var img = [
         "Harlan_TMN_01.jpg",
         "Harlan_TMN_02.jpg",
@@ -37,9 +37,8 @@
     ];
 
     for (var i = 0; i < img.length; ++i) {
-        alert(temp);
         //html = temp.replace("{image}", img[i]);
-        //$("#photo-gallery").append(html);
+        $("#photo-gallery").append(temp);
     }
     
     var swiper = new Swiper('.swiper-container', {
