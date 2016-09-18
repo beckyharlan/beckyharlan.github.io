@@ -8,7 +8,7 @@
     <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> 
 
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/grayscale.js" | prepend: site.baseurl }}"></script>
@@ -19,17 +19,27 @@
 
     <!-- Initialize Swiper -->
     <script>
+<<<<<<< HEAD
 
     var temp = "<div class=\"swiper-slide\"  style=\"background-image:url(\"/img/{image}\")\"></div>";
     var img = [
         "Harlan_TMN_01.jpg",
         "Harlan_TMN_02.jpg",
         "Harlan_TMN_03.jpg",
+=======
+    var temp = "<div class=\"swiper-slide\" style=\"background-image:url(https://beckyharlan.github.io/img/{image});\"></div>";
+    var img = [
+        "Harlan_TMN_01.jpg",
+        "Harlan_TMN_02.jpg",
+>>>>>>> b46dd95b6b2b6d3c27867c92b827282b2c8e8f0c
         "Harlan_TMN_04.jpg",
         "Harlan_TMN_05.jpg",
         "Harlan_TMN_06.jpg",
         "Harlan_TMN_12.jpg",
+<<<<<<< HEAD
         "Harlan_TMN_13.jpg",
+=======
+>>>>>>> b46dd95b6b2b6d3c27867c92b827282b2c8e8f0c
         "Harlan_TMN_14.jpg",
         "Harlan_TMN_15.jpg",
         "Harlan_TMN_16.jpg",
@@ -37,16 +47,24 @@
         "Harlan_TMN_18.jpg"
     ];
 
+<<<<<<< HEAD
     for (var i = 0; i <= img.length; ++i) {
         html = temp.replace("{image}", img[i]);
         $("#photo-gallery").append(html);
     }
 
+=======
+    for (var i = 0; i < img.length; ++i) {
+        html = temp.replace("{image}", img[i]);
+        $("#photo-gallery").append(html);
+    }
+    
+>>>>>>> b46dd95b6b2b6d3c27867c92b827282b2c8e8f0c
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        slidesPerView: 1,
+        //slidesPerView: 1,
         paginationClickable: true,
         spaceBetween: 30,
         loop: true
