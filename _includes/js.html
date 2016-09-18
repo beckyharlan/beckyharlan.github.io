@@ -19,7 +19,7 @@
 
     <!-- Initialize Swiper -->
     <script>
-    var temp = "<div class=\"swiper-slide\" style=\"background-image:url(https://beckyharlan.github.io/img/Harlan_TMN_01.jpg)\"></div>";
+    var temp = "<div class=\"swiper-slide\" style=\"background-image:url(https://beckyharlan.github.io/img/Harlan_TMN_01.jpg);\"></div>";
     var img = [
         "Harlan_TMN_01.jpg",
         "Harlan_TMN_02.jpg",
@@ -38,8 +38,7 @@
 
     for (var i = 0; i < img.length; ++i) {
         //html = temp.replace("{image}", img[i]);
-        //$("#photo-gallery").append(temp);
-        alert(temp);
+        $("#photo-gallery").append(temp);
     }
     
     var swiper = new Swiper('.swiper-container', {
