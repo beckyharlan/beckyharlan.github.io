@@ -366,11 +366,11 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
-#photos, #video, #map2, #community, #postcards {
+#photos, #video, #map2, #community, #postcards, #seafarers {
     padding-top: 50px;
 }
 
-#communitygallery img, #photogallery img, #postcardgallery img {
+#communitygallery img, #photogallery img, #postcardgallery img, #seafarersgallery img {
     padding: 5px 5px 5px 5px;
 }
 
