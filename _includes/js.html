@@ -53,6 +53,13 @@
         html = temp.replace("{image}", i + 1).replace("{image}", i + 1);
         $("#postcardgallery").append(html);
     }
+     
+    var temp = "<a href='https://beckyharlan.github.io/img/seafarers/s{image}.jpg'><img src='https://beckyharlan.github.io/img/postcards/{image}_tn.jpg' /></a>";
+    limitItem = 4;
+    for (var i = 0; i < limitItem; ++i) {
+        html = temp.replace("{image}", i + 1).replace("{image}", i + 1);
+        $("#seafarersgallery").append(html);
+    }
 
     $(document).ready(function() {
         $("#communitygallery").lightGallery({
@@ -73,5 +80,10 @@
                 showThumbByDefault: false
             }); 
 
+        $("#seafarersgallery").lightGallery({
+                thumbnail:true,
+                animateThumb: true,
+                showThumbByDefault: false
+            }); 
     });
     </script>
