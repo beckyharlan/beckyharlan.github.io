@@ -54,8 +54,8 @@
         $("#postcardgallery").append(html);
     }
      
-    var temp = "<a href='https://beckyharlan.github.io/img/seafarers/s{image}.jpg'><img src='https://beckyharlan.github.io/img/postcards/{image}_tn.jpg' /></a>";
-    limitItem = 4;
+    var temp = "<a href='https://beckyharlan.github.io/img/seafarers/s{image}.jpg'><img src='https://beckyharlan.github.io/img/seafarers/s{image}_tn.jpg' /></a>";
+    limitItem = 13;
     for (var i = 0; i < limitItem; ++i) {
         html = temp.replace("{image}", i + 1).replace("{image}", i + 1);
         $("#seafarersgallery").append(html);
