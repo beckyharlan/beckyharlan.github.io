@@ -376,11 +376,11 @@ body {
 
 @media(max-width:480px) {
     
-    #photos, #video, #map2, #community, #postcards {
+    #photos, #video, #map2, #community, #postcards, #seafarers {
     padding-top: 60px;
     }
 
-    #communitygallery img, #photogallery img, #postcardgallery img {
+    #communitygallery img, #photogallery img, #postcardgallery img, #seafarersgallery img {
         width: 300px;
     }
 
