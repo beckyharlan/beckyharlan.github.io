@@ -41,7 +41,7 @@
     }
 
     var temp = "<a href='https://beckyharlan.github.io/img/photos/p{image}.jpg'><img src='https://beckyharlan.github.io/img/photos/p{image}_tn.jpg' /></a>";
-    limitItem = 48;
+    limitItem = 36;
     for (var i = 0; i < limitItem; ++i) {
         html = temp.replace("{image}", i + 1).replace("{image}", i + 1);
         $("#photogallery").append(html);
