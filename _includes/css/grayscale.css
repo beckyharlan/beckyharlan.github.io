@@ -156,7 +156,7 @@ a:focus {
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 @media(min-width:767px) {
@@ -170,7 +170,7 @@ a:focus {
     }
 
     .intro .intro-body .intro-text {
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 
